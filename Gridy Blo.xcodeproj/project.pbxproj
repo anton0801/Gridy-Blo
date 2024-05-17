@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEAE7DBC2BF660670087FA88 /* Gridy_BloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DBB2BF660670087FA88 /* Gridy_BloApp.swift */; };
+		EEAE7DBE2BF660670087FA88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DBD2BF660670087FA88 /* ContentView.swift */; };
+		EEAE7DC02BF660690087FA88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAE7DBF2BF660690087FA88 /* Assets.xcassets */; };
+		EEAE7DC32BF660690087FA88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAE7DC22BF660690087FA88 /* Preview Assets.xcassets */; };
+		EEAE7DCC2BF666C40087FA88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DCB2BF666C40087FA88 /* HomeView.swift */; };
+		EEAE7DCE2BF667230087FA88 /* LivesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DCD2BF667230087FA88 /* LivesRepository.swift */; };
+		EEAE7DD02BF6680A0087FA88 /* Jua-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEAE7DCF2BF6680A0087FA88 /* Jua-Regular.ttf */; };
+		EEAE7DD42BF668B10087FA88 /* NumberExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DD32BF668B10087FA88 /* NumberExt.swift */; };
+		EEAE7DD62BF669360087FA88 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DD52BF669360087FA88 /* SettingsRepository.swift */; };
+		EEAE7DD92BF66A110087FA88 /* GridyGameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DD82BF66A110087FA88 /* GridyGameSceneView.swift */; };
+		EEAE7DDE2BF66EFB0087FA88 /* GridySettingsGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DDD2BF66EFB0087FA88 /* GridySettingsGameView.swift */; };
+		EEAE7DE02BF673800087FA88 /* GridySceneGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DDF2BF673800087FA88 /* GridySceneGame.swift */; };
+		EEAE7DE22BF673B80087FA88 /* GridySceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DE12BF673B80087FA88 /* GridySceneViewModel.swift */; };
+		EEAE7DE42BF6755C0087FA88 /* LevelsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DE32BF6755C0087FA88 /* LevelsRepository.swift */; };
+		EEAE7DE62BF6A2C30087FA88 /* GamePauseStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DE52BF6A2C30087FA88 /* GamePauseStateView.swift */; };
+		EEAE7DE82BF6A5890087FA88 /* GameWinStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DE72BF6A5890087FA88 /* GameWinStateView.swift */; };
+		EEAE7DEA2BF6A6950087FA88 /* GameLoseStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE7DE92BF6A6950087FA88 /* GameLoseStateView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EEAE7DB82BF660670087FA88 /* Gridy Blo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gridy Blo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEAE7DBB2BF660670087FA88 /* Gridy_BloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gridy_BloApp.swift; sourceTree = "<group>"; };
+		EEAE7DBD2BF660670087FA88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEAE7DBF2BF660690087FA88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEAE7DC22BF660690087FA88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEAE7DCB2BF666C40087FA88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EEAE7DCD2BF667230087FA88 /* LivesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivesRepository.swift; sourceTree = "<group>"; };
+		EEAE7DCF2BF6680A0087FA88 /* Jua-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jua-Regular.ttf"; sourceTree = "<group>"; };
+		EEAE7DD12BF668350087FA88 /* Gridy-Blo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gridy-Blo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EEAE7DD32BF668B10087FA88 /* NumberExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExt.swift; sourceTree = "<group>"; };
+		EEAE7DD52BF669360087FA88 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		EEAE7DD82BF66A110087FA88 /* GridyGameSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridyGameSceneView.swift; sourceTree = "<group>"; };
+		EEAE7DDD2BF66EFB0087FA88 /* GridySettingsGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridySettingsGameView.swift; sourceTree = "<group>"; };
+		EEAE7DDF2BF673800087FA88 /* GridySceneGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridySceneGame.swift; sourceTree = "<group>"; };
+		EEAE7DE12BF673B80087FA88 /* GridySceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridySceneViewModel.swift; sourceTree = "<group>"; };
+		EEAE7DE32BF6755C0087FA88 /* LevelsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsRepository.swift; sourceTree = "<group>"; };
+		EEAE7DE52BF6A2C30087FA88 /* GamePauseStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePauseStateView.swift; sourceTree = "<group>"; };
+		EEAE7DE72BF6A5890087FA88 /* GameWinStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinStateView.swift; sourceTree = "<group>"; };
+		EEAE7DE92BF6A6950087FA88 /* GameLoseStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLoseStateView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEAE7DB52BF660670087FA88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEAE7DAF2BF660670087FA88 = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DBA2BF660670087FA88 /* Gridy Blo */,
+				EEAE7DB92BF660670087FA88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEAE7DB92BF660670087FA88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DB82BF660670087FA88 /* Gridy Blo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEAE7DBA2BF660670087FA88 /* Gridy Blo */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DD22BF668A60087FA88 /* Ext */,
+				EEAE7DD12BF668350087FA88 /* Gridy-Blo-Info.plist */,
+				EEAE7DCF2BF6680A0087FA88 /* Jua-Regular.ttf */,
+				EEAE7DC92BF666AE0087FA88 /* GridyGameApp */,
+				EEAE7DBB2BF660670087FA88 /* Gridy_BloApp.swift */,
+				EEAE7DBD2BF660670087FA88 /* ContentView.swift */,
+				EEAE7DBF2BF660690087FA88 /* Assets.xcassets */,
+				EEAE7DC12BF660690087FA88 /* Preview Content */,
+			);
+			path = "Gridy Blo";
+			sourceTree = "<group>";
+		};
+		EEAE7DC12BF660690087FA88 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DC22BF660690087FA88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEAE7DC92BF666AE0087FA88 /* GridyGameApp */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DDB2BF66A2D0087FA88 /* Settings */,
+				EEAE7DD72BF669FE0087FA88 /* GridyGame */,
+				EEAE7DCA2BF666B50087FA88 /* Home */,
+				EEAE7DCD2BF667230087FA88 /* LivesRepository.swift */,
+				EEAE7DD52BF669360087FA88 /* SettingsRepository.swift */,
+				EEAE7DE32BF6755C0087FA88 /* LevelsRepository.swift */,
+			);
+			path = GridyGameApp;
+			sourceTree = "<group>";
+		};
+		EEAE7DCA2BF666B50087FA88 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DCB2BF666C40087FA88 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EEAE7DD22BF668A60087FA88 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DD32BF668B10087FA88 /* NumberExt.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		EEAE7DD72BF669FE0087FA88 /* GridyGame */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DDC2BF66A460087FA88 /* GameStateViews */,
+				EEAE7DDA2BF66A230087FA88 /* GridyScane */,
+				EEAE7DD82BF66A110087FA88 /* GridyGameSceneView.swift */,
+			);
+			path = GridyGame;
+			sourceTree = "<group>";
+		};
+		EEAE7DDA2BF66A230087FA88 /* GridyScane */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DDF2BF673800087FA88 /* GridySceneGame.swift */,
+				EEAE7DE12BF673B80087FA88 /* GridySceneViewModel.swift */,
+			);
+			path = GridyScane;
+			sourceTree = "<group>";
+		};
+		EEAE7DDB2BF66A2D0087FA88 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DDD2BF66EFB0087FA88 /* GridySettingsGameView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EEAE7DDC2BF66A460087FA88 /* GameStateViews */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE7DE52BF6A2C30087FA88 /* GamePauseStateView.swift */,
+				EEAE7DE72BF6A5890087FA88 /* GameWinStateView.swift */,
+				EEAE7DE92BF6A6950087FA88 /* GameLoseStateView.swift */,
+			);
+			path = GameStateViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEAE7DB72BF660670087FA88 /* Gridy Blo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEAE7DC62BF660690087FA88 /* Build configuration list for PBXNativeTarget "Gridy Blo" */;
+			buildPhases = (
+				EEAE7DB42BF660670087FA88 /* Sources */,
+				EEAE7DB52BF660670087FA88 /* Frameworks */,
+				EEAE7DB62BF660670087FA88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gridy Blo";
+			productName = "Gridy Blo";
+			productReference = EEAE7DB82BF660670087FA88 /* Gridy Blo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEAE7DB02BF660670087FA88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					EEAE7DB72BF660670087FA88 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = EEAE7DB32BF660670087FA88 /* Build configuration list for PBXProject "Gridy Blo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEAE7DAF2BF660670087FA88;
+			productRefGroup = EEAE7DB92BF660670087FA88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEAE7DB72BF660670087FA88 /* Gridy Blo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEAE7DB62BF660670087FA88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAE7DD02BF6680A0087FA88 /* Jua-Regular.ttf in Resources */,
+				EEAE7DC32BF660690087FA88 /* Preview Assets.xcassets in Resources */,
+				EEAE7DC02BF660690087FA88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEAE7DB42BF660670087FA88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAE7DCC2BF666C40087FA88 /* HomeView.swift in Sources */,
+				EEAE7DE22BF673B80087FA88 /* GridySceneViewModel.swift in Sources */,
+				EEAE7DBE2BF660670087FA88 /* ContentView.swift in Sources */,
+				EEAE7DD62BF669360087FA88 /* SettingsRepository.swift in Sources */,
+				EEAE7DDE2BF66EFB0087FA88 /* GridySettingsGameView.swift in Sources */,
+				EEAE7DD42BF668B10087FA88 /* NumberExt.swift in Sources */,
+				EEAE7DD92BF66A110087FA88 /* GridyGameSceneView.swift in Sources */,
+				EEAE7DE02BF673800087FA88 /* GridySceneGame.swift in Sources */,
+				EEAE7DBC2BF660670087FA88 /* Gridy_BloApp.swift in Sources */,
+				EEAE7DEA2BF6A6950087FA88 /* GameLoseStateView.swift in Sources */,
+				EEAE7DE82BF6A5890087FA88 /* GameWinStateView.swift in Sources */,
+				EEAE7DE42BF6755C0087FA88 /* LevelsRepository.swift in Sources */,
+				EEAE7DCE2BF667230087FA88 /* LivesRepository.swift in Sources */,
+				EEAE7DE62BF6A2C30087FA88 /* GamePauseStateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EEAE7DC42BF660690087FA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEAE7DC52BF660690087FA88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEAE7DC72BF660690087FA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gridy Blo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RSA42DBKQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gridy-Blo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamebig.Gridy-Blo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EEAE7DC82BF660690087FA88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gridy Blo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RSA42DBKQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gridy-Blo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gamebig.Gridy-Blo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEAE7DB32BF660670087FA88 /* Build configuration list for PBXProject "Gridy Blo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEAE7DC42BF660690087FA88 /* Debug */,
+				EEAE7DC52BF660690087FA88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEAE7DC62BF660690087FA88 /* Build configuration list for PBXNativeTarget "Gridy Blo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEAE7DC72BF660690087FA88 /* Debug */,
+				EEAE7DC82BF660690087FA88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEAE7DB02BF660670087FA88 /* Project object */;
+}
