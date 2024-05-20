@@ -2,6 +2,8 @@ import SwiftUI
 
 struct GameWinStateView: View {
     @Environment(\.presentationMode) var presentationMode
+    
+    @EnvironmentObject var livesRepository: LivesRepository
 
     var restartAction: () -> Void
     var nextLevelAction: () -> Void
@@ -42,12 +44,14 @@ struct GameWinStateView: View {
                         .frame(width: 110, height: 110)
                 }
                 
-                Button {
-                    nextLevelAction()
-                } label: {
-                    Image("next_level_btn")
-                        .resizable()
-                        .frame(width: 110, height: 110)
+                if livesRepository.livesAvailable > 0 {
+                    Button {
+                        nextLevelAction()
+                    } label: {
+                        Image("next_level_btn")
+                            .resizable()
+                            .frame(width: 110, height: 110)
+                    }
                 }
             }
             

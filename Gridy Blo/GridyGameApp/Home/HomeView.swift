@@ -2,11 +2,19 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State var livesRepository: LivesRepository = LivesRepository()
+    @StateObject var livesRepository: LivesRepository = LivesRepository()
     @State var settingsRepository: SettingsRepository = SettingsRepository()
     @State var levelsRepository: LevelsRepository = LevelsRepository()
     
     @State var timeToUnlockNextHeart = -1
+    
+    @State var errorPlayLivesNo = false
+    
+    func formattedTime(time: TimeInterval) -> String {
+        let minutes = Int(time) / 60
+        let seconds = Int(time) % 60
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
     
     var body: some View {
         NavigationView {
@@ -23,7 +31,7 @@ struct HomeView: View {
                         }
                     }
                     if livesRepository.livesAvailable < 3 {
-                        Text(timeToUnlockNextHeart.formatSecondsToMinutesAndSeconds())
+                        Text(self.formattedTime(time: livesRepository.timeRemaining))
                             .font(.custom("Jua-Regular", size: 32))
                             .foregroundColor(.white)
                             .shadow(color: .black, radius: 1)
@@ -36,12 +44,20 @@ struct HomeView: View {
                 
                 ZStack {
                     VStack {
-                        NavigationLink(destination: GridyGameSceneView()
-                            .environmentObject(livesRepository)
-                            .environmentObject(levelsRepository)
-                            .navigationBarBackButtonHidden(true)) {
+                        if livesRepository.livesAvailable > 0 {
+                            NavigationLink(destination: GridyGameSceneView()
+                                .environmentObject(livesRepository)
+                                .environmentObject(levelsRepository)
+                                .navigationBarBackButtonHidden(true)) {
+                                    Image("play_btn")
+                                }
+                        } else {
+                            Button {
+                                errorPlayLivesNo = true
+                            } label: {
                                 Image("play_btn")
                             }
+                        }
                         
                         NavigationLink(destination: GridySettingsGameView()
                             .environmentObject(settingsRepository)
@@ -74,11 +90,48 @@ struct HomeView: View {
             .preferredColorScheme(.dark)
             .onAppear {
                 levelsRepository.setUpInFirstLaunch()
-                print(levelsRepository.currentLevelNum)
+                
+            }
+            .alert(isPresented: $errorPlayLivesNo) {
+                Alert(
+                    title: Text("Warning!"),
+                    message: Text("Sorry, but you don't have lives to play with, come back when lives are restored."),
+                    dismissButton: .default(Text("OK!"))
+                )
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
+    
+    private func calculateLives() {
+        let currentDate = Date()
+        
+        let defaults = UserDefaults.standard
+        if let lastDate = defaults.object(forKey: "live_minus_last_date") as? Date {
+            let timeInterval = currentDate.timeIntervalSince(lastDate)
+            let minutesPassed = Int(timeInterval / 60)
+            
+            var livesToAdd = 0
+            if minutesPassed >= 90 {
+                livesToAdd = 3
+            } else if minutesPassed >= 60 {
+                livesToAdd = 2
+            } else if minutesPassed >= 30 {
+                livesToAdd = 1
+            }
+            
+            if livesToAdd > 0 {
+                livesRepository.livesAvailable += livesToAdd
+                if livesRepository.livesAvailable > 3 {
+                    livesRepository.livesAvailable = 3
+                }
+                defaults.set(nil, forKey: "lastUpdateDate")
+            }
+        } else {
+            defaults.set(currentDate, forKey: "lastUpdateDate")
+        }
+    }
+    
 }
 
 #Preview {

@@ -22,7 +22,6 @@ class GridySceneGame: SKScene {
     
     override func didMove(to view: SKView) {
         level = levelsRepository.getCurrentLevelItem()
-        print(level)
         gridySceneViewModel = GridySceneViewModel(level: level)
         gridySceneViewModel.createGame(in: self)
         

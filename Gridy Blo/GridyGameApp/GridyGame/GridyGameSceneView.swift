@@ -80,6 +80,7 @@ struct GridyGameSceneView: View {
                         isGameWin = false
                     }
                 })
+                .environmentObject(livesRepository)
             } else if isGameLose {
                 GameLoseStateView(restartAction: {
                     gridyGameScene?.finishGame()

@@ -253,10 +253,10 @@ class GridySceneViewModel {
         let yIndex = Int(nodeNameComponents[1])!
         let xIndex = Int(nodeNameComponents[2])!
         gameFieldValues[yIndex][xIndex] = gameFieldColorValues[newBlockImage]!
-        checkGameField(in: scene)
+        checkGame(in: scene)
     }
     
-    private func checkGameField(in scene: SKScene) {
+    private func checkGame(in scene: SKScene) {
         if isSymmetric(gameFieldValues) {
             makeGoodJob(in: scene)
             scene.isPaused = true
@@ -298,7 +298,7 @@ class GridySceneViewModel {
         
         if array == [[1], [1, 1, 1], [2], [2, 2, 2]] || array == [[2], [2, 2, 2], [1], [1, 1, 1]] ||
             array == [[2], [2, 2, 2], [1, 1, 1], [1]] || array == [[1], [1, 2, 2], [1, 1, 2], [2]] ||
-            array == [[2], [2, 1, 1], [2, 2, 1], [1]] {
+            array == [[2], [2, 1, 1], [2, 2, 1], [1]] || array == [[1], [1, 1, 1], [2, 2, 2], [2]] || array == [[2, 2, 2], [1, 1, 1, 2], [1, 2, 2, 2], [1, 1, 1]] || array == [[1, 1, 1], [2, 2, 2, 1], [2, 1, 1, 1], [2, 2, 2]] {
             return true
         }
         
